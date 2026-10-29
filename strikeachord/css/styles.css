@@ -226,3 +226,38 @@ color: #4645a8;
 text-decoration: none;
 
 }
+
+select, fieldset {
+margin-bottom: 2%;
+}
+
+fieldset legend {
+   
+   font-weight: bold;
+   font-size: 1.25em;
+}
+
+label{
+padding-top: 3%;
+display:block;
+
+}
+
+form #submit {
+
+   margin: 0 auto;
+   display:block;
+   padding: 3%;
+   background-color: #b7b7e1;
+   font-size: 1em;
+}
+
+.form-grid {
+   display:grid;
+   grid-template-columns: auto auto;
+   grid-gap: 20px;
+}
+
+.btn {
+   grid-column: 1 / span 2;
+}
