@@ -1,5 +1,5 @@
 /* css reset */
-body, header, nav, main, footer, img, h1, h3 {
+body, header, nav, main, footer, img, h1, h3, ul {
     margin: 0;
     padding: 0;
     border: 0;
@@ -24,14 +24,14 @@ nav {
 }
 nav ul {
     list-style-type: none;
-    margin: 0;
     text-align: center;
 }
 nav li {
-    display: inline-block;
+    display: block;
     font-size: 1.5em;
     font-family: Geneva, Arial, Helvetica, sans-serif;
     font-weight: bold;
+    border-top:.5px solid #f6eee4;
 }
 nav li a {
     display: block;
@@ -76,8 +76,30 @@ main ul {
     text-align: center;
 }
 
+.round {
+    border-radius: 6px;
+}
+
+#info ul {
+    margin-left: 10%;
+}
+
 #contact{
     text-align: center;
+}
+
+.tel-link {
+    background-color: #2a1f14;
+    padding:2%;
+    width:80%;
+    margin: 0 auto;
+}
+
+a.tel-link  { /*applies only to anchors with tel-link class*/
+    color:#f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+
 }
 
 /* Style rules for footer content */
@@ -138,3 +160,76 @@ form {
     grid-column: 1 / span 2;
 }
 
+/* Viewport Styles */
+
+.mobile {
+    display:block
+
+}
+
+.tab-desk {
+    display:none
+}
+
+.mobile h1, .mobile h3 {
+    padding:2%;
+    text-align: center;
+}
+
+.mobile h1 {
+    font-family: "Emblema One";
+}
+
+.mobile h3 {
+    font-family: "Lora";
+}
+
+main {
+    padding:2%;
+    font-family: "Lora";
+}
+
+main p {
+    font-size: 1.5em;
+}
+
+main h3 {
+padding-top: 2%;
+}
+
+main ul{
+list-style: square;
+}
+
+.link{
+text-decoration: none;
+color:#4d3319;
+font-weight: bold;
+font-style: italic;
+
+}
+
+.action{
+font-size: 1.75em;
+font-weight: bold;
+text-align: center;
+}
+
+#contact {
+text-align: center;
+}
+
+/* Fonts */
+
+.emblema-one-regular {
+  font-family: "Emblema One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lora-font {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
